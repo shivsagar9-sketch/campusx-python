@@ -1,0 +1,672 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNZ1ErzHfekn5Prjjflh5Vg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shivsagar9-sketch/campusx-python/blob/main/session%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "fZR0LUX1XTf4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#OPERATORES\n",
+        "\n",
+        "\n",
+        "*   arithmetic\n",
+        "*   relational\n",
+        "*   bitwise\n",
+        "*   assignment\n",
+        "*   logical\n",
+        "*   membership\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "id": "TqkikbmFXU69"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#arithmetic operator\n",
+        "print(5+6)\n",
+        "print(6-5)\n",
+        "print(6*5)\n",
+        "print(5/2)\n",
+        "print(5//2)\n",
+        "print(5%2)\n",
+        "print(5**2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ERauRhZgXYS1",
+        "outputId": "a9597d52-8e07-4530-f9af-47b1499513f3"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "11\n",
+            "1\n",
+            "30\n",
+            "2.5\n",
+            "2\n",
+            "1\n",
+            "25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#relational operator\n",
+        "print(4>5)\n",
+        "print(4<5)\n",
+        "print(4>=4)\n",
+        "print(4<=4)\n",
+        "print(4==4)\n",
+        "print(4!=4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hIGNO0AlYYfu",
+        "outputId": "07c78a12-20ea-4382-cdfa-6f3acad20cb6"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "True\n",
+            "True\n",
+            "True\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#logical operator\n",
+        "print(1 and 0)\n",
+        "print(1 or 0)\n",
+        "print(not 1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "auMb-6NgYncI",
+        "outputId": "8a8f7e59-c7a9-4ad3-9bd0-96e3d01c0916"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#bitwise operator\n",
+        "print(2 & 3)\n",
+        "print(2 | 3)\n",
+        "print(2 ^ 3)\n",
+        "print(~3)\n",
+        "print(4 >> 2)\n",
+        "print(5 << 2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e1G7zuNcY39n",
+        "outputId": "2d5f8f2c-ed6d-4bb5-fe16-cf50df2facc0"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "1\n",
+            "-4\n",
+            "1\n",
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#assignment operator\n",
+        "# =\n",
+        "#a =2\n",
+        "a=2\n",
+        "#a =a+2\n",
+        "a +=2\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rek016iTaAIU",
+        "outputId": "6c870cbc-a799-4929-9893-82863bb5565a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#membership operator\n",
+        "#in /not in\n",
+        "print('d' in \"delhi\")\n",
+        "\n",
+        "print(6 in [1,2,3,4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7Cp4AwToaSnt",
+        "outputId": "72ac5fc1-0170-4bf2-a017-cea10203d243"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program -find the sum of the 3 digit number entered by the user\n",
+        "num = int(input('enter a number'))\n",
+        "sum = 0\n",
+        "while num>0:\n",
+        "  digit =num%10\n",
+        "  sum +=digit\n",
+        "  num =num//10\n",
+        "print('total sum of ther num:',sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TRy-e9d-axMA",
+        "outputId": "592e70d5-8048-4ad0-8f2d-8105abfae1c5"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number789\n",
+            "total sum of ther num: 24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#If-else in python"
+      ],
+      "metadata": {
+        "id": "zVHqwHf9c-8Y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "  #login program and imdentation\n",
+        "email = input('enter email')\n",
+        "password = input('enter paaaword')\n",
+        "if email =='shiv.gmail.com' and password =='1234':\n",
+        "   print('you are logged in')\n",
+        "elif email =='shiv.gmail.com' and password !='1234':\n",
+        "   print('wrong password')\n",
+        "   password =input('enter password again')\n",
+        "   if password =='1234':\n",
+        "     print('finally correct')\n",
+        "   else:\n",
+        "     print('welcome! now')\n",
+        "else:\n",
+        "   print('wrong email or password')\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SAuEgsxrbw2G",
+        "outputId": "5b89ab80-4f3e-4aba-a466-dd578661b6e2"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter emailshiv.gmail.com\n",
+            "enter paaaword1232445\n",
+            "wrong password\n",
+            "enter password again1234\n",
+            "welcome! now\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#min of the 3 number\n",
+        "a =int(input('enter first number'))\n",
+        "b =int(input('enter second number'))\n",
+        "c =int(input('enter third number'))\n",
+        "if a<b:\n",
+        "  if a<c:\n",
+        "    print(\"a is the smallest\")\n",
+        "  else:\n",
+        "    print(\"c is smallest\")\n",
+        "else:\n",
+        "   if b<c:\n",
+        "    print(\"b is smallest \")\n",
+        "   else:\n",
+        "     print(\"c 5is smallest\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AFYtaU9LhByW",
+        "outputId": "4206e3e1-ffd2-4483-fca1-59329e0aac3a"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter first number6\n",
+            "enter second number5\n",
+            "enter third number2\n",
+            "c is smallest\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#module in python\n",
+        "\n",
+        "*   math\n",
+        "*   keywords\n",
+        "*   random\n",
+        "*   datetime\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "ZAxntKxOjy1N"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#math\n",
+        "import math\n",
+        "math.sqrt(196)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fPElQkWnin-f",
+        "outputId": "804374b3-3fb8-47c8-98a0-faedf83483ac"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "14.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#keyword\n",
+        "import keyword\n",
+        "print(keyword.kwlist)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W2sG0pnWk6j0",
+        "outputId": "45e4f929-8b59-4fc7-e663-94e7375e4069"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#random\n",
+        "import random\n",
+        "print(random.randint(1,100))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lTaOj1NnlLYU",
+        "outputId": "32d2687c-05a2-481e-a94e-578767df231c"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "85\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#dayetime\n",
+        "import datetime\n",
+        "print(datetime.datetime.now())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Y7DEBE4yld2e",
+        "outputId": "fac10843-97e4-4d73-cb4c-22b39071ff25"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2026-07-01 12:10:56.261122\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "help('modules')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 1000
+        },
+        "id": "yRWmzzVMnSYU",
+        "outputId": "96638104-0484-41dd-f8d5-5c4a9b2f0f53"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "ERROR:root:Internal Python error in the inspect module.\n",
+            "Below is the traceback from this internal error.\n",
+            "\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Please wait a moment while I gather a list of all available modules...\n",
+            "\n",
+            "\u001b[31mUnable to import `black` from betterproto plugin! Please ensure that you've installed betterproto as `pip install \"betterproto[compiler]\"` so that compiler dependencies are included.\u001b[0m\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/betterproto/plugin/compiler.py\", line 6, in <module>\n",
+            "    import black\n",
+            "ModuleNotFoundError: No module named 'black'\n",
+            "\n",
+            "During handling of the above exception, another exception occurred:\n",
+            "\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/IPython/core/interactiveshell.py\", line 3553, in run_code\n",
+            "    exec(code_obj, self.user_global_ns, self.user_ns)\n",
+            "  File \"/tmp/ipykernel_5055/2756529105.py\", line 1, in <cell line: 0>\n",
+            "    help('modules')\n",
+            "  File \"<frozen _sitebuiltins>\", line 103, in __call__\n",
+            "  File \"/usr/lib/python3.12/pydoc.py\", line 2112, in __call__\n",
+            "    self.help(request)\n",
+            "  File \"/usr/lib/python3.12/pydoc.py\", line 2161, in help\n",
+            "    elif request == 'modules': self.listmodules()\n",
+            "                               ^^^^^^^^^^^^^^^^^^\n",
+            "  File \"/usr/lib/python3.12/pydoc.py\", line 2319, in listmodules\n",
+            "    ModuleScanner().run(callback, onerror=onerror)\n",
+            "  File \"/usr/lib/python3.12/pydoc.py\", line 2348, in run\n",
+            "    for importer, modname, ispkg in pkgutil.walk_packages(onerror=onerror):\n",
+            "                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+            "  File \"/usr/lib/python3.12/pkgutil.py\", line 93, in walk_packages\n",
+            "    yield from walk_packages(path, info.name+'.', onerror)\n",
+            "  File \"/usr/lib/python3.12/pkgutil.py\", line 78, in walk_packages\n",
+            "    __import__(info.name)\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/betterproto/plugin/__init__.py\", line 1, in <module>\n",
+            "    from .main import main\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/betterproto/plugin/main.py\", line 11, in <module>\n",
+            "    from betterproto.plugin.parser import generate_code\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/betterproto/plugin/parser.py\", line 25, in <module>\n",
+            "    from .compiler import outputfile_compiler\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/betterproto/plugin/compiler.py\", line 18, in <module>\n",
+            "    raise SystemExit(1)\n",
+            "SystemExit: 1\n",
+            "\n",
+            "During handling of the above exception, another exception occurred:\n",
+            "\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\", line 1101, in get_records\n",
+            "    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)\n",
+            "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\", line 248, in wrapped\n",
+            "    return f(*args, **kwargs)\n",
+            "           ^^^^^^^^^^^^^^^^^^\n",
+            "  File \"/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\", line 281, in _fixed_getinnerframes\n",
+            "    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))\n",
+            "                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+            "  File \"/usr/lib/python3.12/inspect.py\", line 1769, in getinnerframes\n",
+            "    traceback_info = getframeinfo(tb, context)\n",
+            "                     ^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+            "  File \"/usr/lib/python3.12/inspect.py\", line 1701, in getframeinfo\n",
+            "    lineno = frame.f_lineno\n",
+            "             ^^^^^^^^^^^^^^\n",
+            "AttributeError: 'tuple' object has no attribute 'f_lineno'\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "object of type 'NoneType' has no len()",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/betterproto/plugin/compiler.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0;31m# betterproto[compiler] specific dependencies\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m     \u001b[0;32mimport\u001b[0m \u001b[0mblack\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m     \u001b[0;32mimport\u001b[0m \u001b[0misort\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mapi\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'black'",
+            "\nDuring handling of the above exception, another exception occurred:\n",
+            "\u001b[0;31mSystemExit\u001b[0m                                Traceback (most recent call last)",
+            "    \u001b[0;31m[... skipping hidden 1 frame]\u001b[0m\n",
+            "\u001b[0;32m/tmp/ipykernel_5055/2756529105.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mhelp\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'modules'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m/usr/lib/python3.12/_sitebuiltins.py\u001b[0m in \u001b[0;36m__call__\u001b[0;34m(self, *args, **kwds)\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.12/pydoc.py\u001b[0m in \u001b[0;36m__call__\u001b[0;34m(self, request)\u001b[0m\n\u001b[1;32m   2111\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2112\u001b[0;31m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhelp\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2113\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mImportError\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0merr\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.12/pydoc.py\u001b[0m in \u001b[0;36mhelp\u001b[0;34m(self, request, is_cli)\u001b[0m\n\u001b[1;32m   2160\u001b[0m             \u001b[0;32melif\u001b[0m \u001b[0mrequest\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'topics'\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlisttopics\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2161\u001b[0;31m             \u001b[0;32melif\u001b[0m \u001b[0mrequest\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'modules'\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlistmodules\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2162\u001b[0m             \u001b[0;32melif\u001b[0m \u001b[0mrequest\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;36m8\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'modules '\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.12/pydoc.py\u001b[0m in \u001b[0;36mlistmodules\u001b[0;34m(self, key)\u001b[0m\n\u001b[1;32m   2318\u001b[0m                 \u001b[0mcallback\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;32mNone\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmodname\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2319\u001b[0;31m             \u001b[0mModuleScanner\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrun\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcallback\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0monerror\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0monerror\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2320\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlist\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmodules\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mkeys\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.12/pydoc.py\u001b[0m in \u001b[0;36mrun\u001b[0;34m(self, callback, key, completer, onerror)\u001b[0m\n\u001b[1;32m   2347\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2348\u001b[0;31m         \u001b[0;32mfor\u001b[0m \u001b[0mimporter\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmodname\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mispkg\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mpkgutil\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwalk_packages\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0monerror\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0monerror\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2349\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mquit\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.12/pkgutil.py\u001b[0m in \u001b[0;36mwalk_packages\u001b[0;34m(path, prefix, onerror)\u001b[0m\n\u001b[1;32m     92\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 93\u001b[0;31m                 \u001b[0;32myield\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mwalk_packages\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0minfo\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0;34m'.'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0monerror\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     94\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.12/pkgutil.py\u001b[0m in \u001b[0;36mwalk_packages\u001b[0;34m(path, prefix, onerror)\u001b[0m\n\u001b[1;32m     77\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 78\u001b[0;31m                 \u001b[0m__import__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minfo\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     79\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mImportError\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/betterproto/plugin/__init__.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0mmain\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmain\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/betterproto/plugin/main.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     10\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mbetterproto\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mplugin\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmodels\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmonkey_patch_oneof_index\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 11\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mbetterproto\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mplugin\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mparser\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mgenerate_code\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     12\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/betterproto/plugin/parser.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     24\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 25\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0;34m.\u001b[0m\u001b[0mcompiler\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0moutputfile_compiler\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     26\u001b[0m from .models import (\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/betterproto/plugin/compiler.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     17\u001b[0m     )\n\u001b[0;32m---> 18\u001b[0;31m     \u001b[0;32mraise\u001b[0m \u001b[0mSystemExit\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     19\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mSystemExit\u001b[0m: 1",
+            "\nDuring handling of the above exception, another exception occurred:\n",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "    \u001b[0;31m[... skipping hidden 1 frame]\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/interactiveshell.py\u001b[0m in \u001b[0;36mshowtraceback\u001b[0;34m(self, exc_tuple, filename, tb_offset, exception_only, running_compiled_code)\u001b[0m\n\u001b[1;32m   2090\u001b[0m                     stb = ['An exception has occurred, use %tb to see '\n\u001b[1;32m   2091\u001b[0m                            'the full traceback.\\n']\n\u001b[0;32m-> 2092\u001b[0;31m                     stb.extend(self.InteractiveTB.get_exception_only(etype,\n\u001b[0m\u001b[1;32m   2093\u001b[0m                                                                      value))\n\u001b[1;32m   2094\u001b[0m                 \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\u001b[0m in \u001b[0;36mget_exception_only\u001b[0;34m(self, etype, value)\u001b[0m\n\u001b[1;32m    752\u001b[0m         \u001b[0mvalue\u001b[0m \u001b[0;34m:\u001b[0m \u001b[0mexception\u001b[0m \u001b[0mvalue\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    753\u001b[0m         \"\"\"\n\u001b[0;32m--> 754\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mListTB\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstructured_traceback\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0metype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvalue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    755\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    756\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mshow_exception_only\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0metype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mevalue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\u001b[0m in \u001b[0;36mstructured_traceback\u001b[0;34m(self, etype, evalue, etb, tb_offset, context)\u001b[0m\n\u001b[1;32m    627\u001b[0m             \u001b[0mchained_exceptions_tb_offset\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    628\u001b[0m             out_list = (\n\u001b[0;32m--> 629\u001b[0;31m                 self.structured_traceback(\n\u001b[0m\u001b[1;32m    630\u001b[0m                     \u001b[0metype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mevalue\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0metb\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mchained_exc_ids\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    631\u001b[0m                     chained_exceptions_tb_offset, context)\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\u001b[0m in \u001b[0;36mstructured_traceback\u001b[0;34m(self, etype, value, tb, tb_offset, number_of_lines_of_context)\u001b[0m\n\u001b[1;32m   1365\u001b[0m         \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1366\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtb\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtb\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1367\u001b[0;31m         return FormattedTB.structured_traceback(\n\u001b[0m\u001b[1;32m   1368\u001b[0m             self, etype, value, tb, tb_offset, number_of_lines_of_context)\n\u001b[1;32m   1369\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\u001b[0m in \u001b[0;36mstructured_traceback\u001b[0;34m(self, etype, value, tb, tb_offset, number_of_lines_of_context)\u001b[0m\n\u001b[1;32m   1265\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mmode\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mverbose_modes\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1266\u001b[0m             \u001b[0;31m# Verbose modes need a full traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1267\u001b[0;31m             return VerboseTB.structured_traceback(\n\u001b[0m\u001b[1;32m   1268\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0metype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvalue\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtb\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtb_offset\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mnumber_of_lines_of_context\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1269\u001b[0m             )\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\u001b[0m in \u001b[0;36mstructured_traceback\u001b[0;34m(self, etype, evalue, etb, tb_offset, number_of_lines_of_context)\u001b[0m\n\u001b[1;32m   1122\u001b[0m         \u001b[0;34m\"\"\"Return a nice text document describing the traceback.\"\"\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1123\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1124\u001b[0;31m         formatted_exception = self.format_exception_as_a_whole(etype, evalue, etb, number_of_lines_of_context,\n\u001b[0m\u001b[1;32m   1125\u001b[0m                                                                tb_offset)\n\u001b[1;32m   1126\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\u001b[0m in \u001b[0;36mformat_exception_as_a_whole\u001b[0;34m(self, etype, evalue, etb, number_of_lines_of_context, tb_offset)\u001b[0m\n\u001b[1;32m   1080\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1081\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1082\u001b[0;31m         \u001b[0mlast_unique\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrecursion_repeat\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfind_recursion\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0morig_etype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mevalue\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrecords\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1083\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1084\u001b[0m         \u001b[0mframes\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mformat_records\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrecords\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mlast_unique\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrecursion_repeat\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/IPython/core/ultratb.py\u001b[0m in \u001b[0;36mfind_recursion\u001b[0;34m(etype, value, records)\u001b[0m\n\u001b[1;32m    380\u001b[0m     \u001b[0;31m# first frame (from in to out) that looks different.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    381\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0mis_recursion_error\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0metype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvalue\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrecords\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 382\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrecords\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    383\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    384\u001b[0m     \u001b[0;31m# Select filename, lineno, func_name to track frames with\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: object of type 'NoneType' has no len()"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install black"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UoJOFN3SohPu",
+        "outputId": "3506d40a-4bb7-4533-aaef-8a6c8b7e55ae"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Collecting black\n",
+            "  Downloading black-26.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (95 kB)\n",
+            "\u001b[?25l     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/95.1 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m95.1/95.1 kB\u001b[0m \u001b[31m3.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/dist-packages (from black) (8.4.2)\n",
+            "Collecting mypy-extensions>=0.4.3 (from black)\n",
+            "  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)\n",
+            "Requirement already satisfied: packaging>=22.0 in /usr/local/lib/python3.12/dist-packages (from black) (26.2)\n",
+            "Collecting pathspec>=1.0.0 (from black)\n",
+            "  Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)\n",
+            "Requirement already satisfied: platformdirs>=2 in /usr/local/lib/python3.12/dist-packages (from black) (4.10.0)\n",
+            "Collecting pytokens~=0.4.0 (from black)\n",
+            "  Downloading pytokens-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)\n",
+            "Downloading black-26.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.9/1.9 MB\u001b[0m \u001b[31m41.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hDownloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)\n",
+            "Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m57.3/57.3 kB\u001b[0m \u001b[31m5.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hDownloading pytokens-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m269.8/269.8 kB\u001b[0m \u001b[31m26.6 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hInstalling collected packages: pytokens, pathspec, mypy-extensions, black\n",
+            "Successfully installed black-26.5.1 mypy-extensions-1.1.0 pathspec-1.1.1 pytokens-0.4.1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "V2-ju66fox-9"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
